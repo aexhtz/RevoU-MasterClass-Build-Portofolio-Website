@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Warna latar belakang abu-abu muda */
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333; /* Warna latar belakang header gelap */
+    color: white; /* Warna teks header putih */
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none; /* Menghilangkan bullet list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mengatur item navigasi dalam satu baris */
+    justify-content: flex-end; /* Rata kanan */
+  }
+  
+  nav li {
+    margin-left: 20px; /* Jarak antara item navigasi */
+  }
+  
+  nav a {
+    color: white; /* Warna teks tautan putih */
+    text-decoration: none; /* Menghilangkan garis bawah tautan */
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    text-align: center; /* Teks di tengah */
+    padding: 100px 20px; /* Padding atas-bawah 100px, kiri-kanan 20px */
+    background-image: url('Gambar/background.png'); /* Ganti dengan path gambar latar belakang Anda */
+    background-size: cover; /* Mengatur ukuran gambar latar belakang */
+    background-position: center; /* Posisi gambar latar belakang di tengah */
+    color: white; /* Warna teks putih */
+  }
+  
+  .hero h1 {
+    font-size: 3rem; /* Ukuran font judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem; /* Ukuran font subjudul */
+    margin-bottom: 20px; /* Jarak bawah subjudul */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333; /* Warna latar belakang footer gelap */
+    color: white; /* Warna teks footer putih */
+    text-align: center; /* Teks di tengah */
+    padding: 10px;
+  }
+  

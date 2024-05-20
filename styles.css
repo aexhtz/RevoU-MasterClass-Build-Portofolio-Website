@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-image: radial-gradient(circle, #111111, #202020);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div.navbar {
+    position: fixed;
+    display: fixed;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+div.navbar ul {
+    display: flex;
+    margin-left: 0px;
+}
+
+div.navbar.ul li {
+    height: 50px;
+}
+
+li.navbarteks {
+    font-size: 25px;
+    color: #ffffff;
+    display: flex;
+    margin-left: 57px;
+}
+
+a.navbarteks2 {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+
+div.maintext1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p.hitext {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    background-image: radial-gradient(circle at center, #DE7676, #4D68C8, #B674EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+}
+
+p.loremipsum {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+img.githubicon {
+    height: 40px;
+    width: 40px;
+}
+
+img.linkedinicon {
+    height: 40px;
+    width: 40px;
+}
+
+img.garisghlinkin {
+    height: 150px;
+    width: 2px;
+}
+
+img.fotoutama {
+    height: 650px;
+    width: 607px;
+}
+
+img.fotoblur {
+    height: 650px;
+    width: 622.09px;
+}
+
+img.garisnavbar {
+    height: 718px;
+    width: 2px;
+}
