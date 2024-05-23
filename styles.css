@@ -55,6 +55,10 @@ p.hitext {
     background-clip: text;
     margin-left: 0px;
     margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
     
 }
 
@@ -63,31 +67,50 @@ p.loremipsum {
     font-style: normal;
     font-size: 20px;
     color: #ffffff;
+    position: absolute;
+    top: 65%;
+    left: 19%;
+    transform: translate(-50%, -50%);
 }
 
 img.githubicon {
     height: 40px;
     width: 40px;
+    position: absolute;
+    top: 65%;
+    left: 19%;
+    transform: translate(-50%, -50%);
 }
 
 img.linkedinicon {
     height: 40px;
     width: 40px;
+    position: absolute;
+    top: 65%;
+    left: 19%;
+    transform: translate(-50%, -50%);
 }
 
 img.garisghlinkin {
     height: 150px;
     width: 2px;
+    position: absolute;
+    top: 65%;
+    left: 19%;
+    transform: translate(-50%, -50%);
 }
 
 img.fotoutama {
     height: 650px;
     width: 607px;
+    position: absolute;
+    margin-left: 52%;
+    bottom: 13%;
 }
 
 img.fotoblur {
-    height: 650px;
-    width: 622.09px;
+    height: 0.1px;
+    width: 0.1px;
 }
 
 img.garisnavbar {
