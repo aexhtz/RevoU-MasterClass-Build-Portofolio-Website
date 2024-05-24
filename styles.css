@@ -399,6 +399,7 @@ ul {
     background-color: #D9D9D9;
     overflow: hidden;
     z-index: 1;
+    cursor: pointer;
 }
 
 .ultigaatas {
@@ -420,6 +421,9 @@ ul {
     width: 150px;
     opacity: 50%;
     background-color: #D9D9D9;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .ultigabawah {
