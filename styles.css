@@ -27,7 +27,7 @@ ul {
 
 .navbarblur {
     position: fixed;
-    z-index: 1;
+    z-index: 98;
     width: 100%;
     height: 105px;
     top: -10px;
@@ -54,12 +54,13 @@ ul {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: normal;
-    z-index: 1;
+    z-index: 99;
 }
 
 .navbar ul {
     display: flex;
     margin-left: 42px;
+    z-index: 100;
 }
 
 .navbarteks {
@@ -67,7 +68,7 @@ ul {
     color: #ffffff;
     display: fixed;
     margin-left: 30px;
-    max-width: 100%;
+    z-index: 100;
 }
 
 .garisnavbar {
@@ -79,7 +80,7 @@ ul {
     top: 100%;
     transform: translate(-50%, -50%);
     rotate: 90deg;
-    z-index: 8;  
+    z-index: 100;  
 }
 
 .navbarteksportofolio, .navbarteksabout, .navbartekscontact, .navbartekshome {
@@ -244,7 +245,6 @@ ul {
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    background-image:
 }
 
 .fotoabout{
@@ -276,7 +276,7 @@ ul {
 
 .about2me {
     font-weight: 600;
-    background-image: radial-gradient(circle at 20%, #DE7676, #4D68C8, #B674EA);
+    background-image: radial-gradient(circle at 85%, #DE7676, #4D68C8, #B674EA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -342,17 +342,94 @@ ul {
 .backlightabout {
     margin-left: -900px;
     position: absolute;
-    top: 990px;
+    top: 950px;
     width: 1000px;
-    height: 350px;
+    height: 200px;
     border-radius: 50%;
     background: linear-gradient(34deg, #26B256 30%, #752AAA 80%, #C62845 100%);
-    filter:blur(350px);
+    filter:blur(300px);
     z-index: -11;
 }
 
 /* --------- CSS Bagian Portofolio -------- */
 
 .bagianportofolio {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
 
+.teksportofolio {
+    font-size: 20px;
+    font-weight: 600;
+    background-image: radial-gradient(circle at 85%, #DE7676, #4D68C8, #B674EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    top: 1480px;
+    left: 360px;
+}
+
+.garisteksportofolio {
+    height: 1px;
+    width: 250px;
+    position: absolute;
+    top: 1516px;
+    left: 500px;
+}
+
+.atas1, .atas2, .atas3 {
+    position: absolute;
+    border-radius: 30px;
+    height: 150px;
+    max-height: 150px;
+    width: 150px;
+    max-width: 150px;
+    opacity: 50%;
+    background-color: #D9D9D9;
+}
+
+.ultigaatas {
+    display: flex;
+    align-items: space-between;
+    position: absolute;
+    gap: 220px;
+    left: 325px;
+    top: 1550px;
+}
+
+.bawah1, .bawah2, .bawah3 {
+    position: absolute;
+    border-radius: 30px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    width: 150px;
+    opacity: 50%;
+    background-color: #D9D9D9;
+}
+
+.ultigabawah {
+    display: flex;
+    align-items: space-between;
+    position: absolute;
+    gap: 220px;
+    left: 325px;
+    top: 1750px;
+}
+
+
+.backlightportofolio {
+    margin-left: 0px;
+    position: absolute;
+    top: 1600px;
+    width: 500px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(34deg, #B2A426 30%, #752AAA 80%, #C62845 100%);
+    filter:blur(200px);
+    z-index: -11;
 }
