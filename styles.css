@@ -125,7 +125,7 @@ ul {
     font-weight: 600;
     font-style: normal;
     font-size: 45px;
-    background-image: radial-gradient(circle at center, #DE7676, #4D68C8, #B674EA);
+    background-image: radial-gradient(circle at 85%, #DE7676, #4D68C8, #B674EA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -207,7 +207,7 @@ ul {
     top: 82%;
     left: 3%;
     transform: translate(-50%, -50%);
-    z-index: 4;
+    z-index: 99;
     opacity: 0.5;
     transition: opacity 0.4s ease 0s;
 }
@@ -219,7 +219,7 @@ ul {
     top: 75%;
     left: 3%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 99;
     opacity: 0.5;
     transition: opacity 0.4s ease 0s;
 }
@@ -231,7 +231,7 @@ ul {
     top: 68%;
     left: 3%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 99;
     opacity: 0.5;
     transition: opacity 0.4s ease 0s;
 }
@@ -244,6 +244,7 @@ ul {
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+    background-image:
 }
 
 .fotoabout{
@@ -275,7 +276,10 @@ ul {
 
 .about2me {
     font-weight: 600;
-    color: #CDCDCD;
+    background-image: radial-gradient(circle at 20%, #DE7676, #4D68C8, #B674EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     position: absolute;
     bottom: -260px;
     font-size: 20px;
@@ -287,7 +291,7 @@ ul {
     width: 298px;
     position: relative;
     bottom: -205px;
-    left: -42px; /* 490 tengah */
+    left: -45px;
     z-index: 1;
 }
 
@@ -304,6 +308,7 @@ ul {
     top: 900px;
     left: 320px;
     font-size: 14px;
+    z-index: 15;
 }
 
 .listpemrogteks1, .listpemrogteks2, .listpemrogteks3 {
@@ -312,6 +317,7 @@ ul {
     font-size: 11px;
     color: #cdcdcd;
     bottom: -550px;
+    z-index: 15;
 }
 
 .kanan {
@@ -320,6 +326,7 @@ ul {
     margin-left: -10px;
     color: #B928BC;
     font-weight: 300;
+    z-index: 15;
 }
 
 .fullstackdev {
@@ -330,4 +337,22 @@ ul {
     position: absolute;
     bottom: -520px;
     left: 280px;
+}
+
+.backlightabout {
+    margin-left: -900px;
+    position: absolute;
+    top: 990px;
+    width: 400px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(34deg, #26B256 30%, #752AAA 80%, #C62845 100%);
+    filter:blur(225px);
+    z-index: -11;
+}
+
+/* --------- CSS Bagian Portofolio -------- */
+
+.bagianportofolio {
+
 }
