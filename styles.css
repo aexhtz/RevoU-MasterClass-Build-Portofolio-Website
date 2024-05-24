@@ -27,20 +27,20 @@ ul {
 
 .navbarblur {
     position: fixed;
-    z-index: -12;
+    z-index: 1;
     width: 100%;
     height: 105px;
     top: -10px;
-    filter: blur(1px);
+    filter: blur(30px);
     background-color: #1d1d1d;
 }
 
 .backlight {
-    margin-left: 1000px;
+    margin-left: 900px;
     position: absolute;
     top: 210px;
-    width: 450px;
-    height: 400px;
+    width: 400px;
+    height: 350px;
     border-radius: 50%;
     background: radial-gradient(circle at 40%, #B22648, #9328C6);
     filter:blur(120px);
@@ -63,7 +63,7 @@ ul {
 }
 
 .navbarteks {
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
     display: fixed;
     margin-left: 30px;
@@ -74,7 +74,7 @@ ul {
     height: 600px;
     width: 1px;
     position: absolute;
-    left: 870px;
+    left: 735px;
     margin-top: -330px;
     top: 100%;
     transform: translate(-50%, -50%);
@@ -124,7 +124,7 @@ ul {
 .hitext {
     font-weight: 600;
     font-style: normal;
-    font-size: 47px;
+    font-size: 45px;
     background-image: radial-gradient(circle at center, #DE7676, #4D68C8, #B674EA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -132,7 +132,7 @@ ul {
     margin-top: 0px;
     position: absolute;
     top: 48%;
-    left: 500px;
+    left: 470px;
     transform: translate(-50%, -50%);
     z-index: -9;
 }
@@ -140,11 +140,11 @@ ul {
 .loremipsum {
     font-weight: 300;
     font-style: normal;
-    font-size: 19px;
+    font-size: 17px;
     color: #CDCDCD;
     position: absolute;
     top: 61%;
-    left: 365px;
+    left: 330px;
     transform: translate(-50%, -50%);
     z-index: -8;
 }
@@ -162,10 +162,10 @@ ul {
 
 .fotoblur {
     height: 500px;
-    width: 500px;
+    width: 450px;
     position: absolute;
-    margin-left: 888px;
-    bottom: 125px;
+    margin-left: 825px;
+    bottom: 100px;
     z-index: -1;
     border-radius: 50%;
     filter: blur(11px);
@@ -249,8 +249,8 @@ ul {
 .fotoabout{
     scale: 77%;
     position: absolute;
-    right: 20px;
-    top: 850px;
+    right: -50px;
+    top: 750px;
     z-index: 1;
     filter: grayscale(100%);
 }
@@ -268,8 +268,8 @@ ul {
     border: 2px solid #ffffff;
     box-shadow: 2px 3px 9.1px rgba(77, 104, 200, 0.5);
     background-clip: padding-box;
-    right: 148px;
-    top: 1050px;
+    right: 75px;
+    top: 950px;
     z-index: 0;
 }
 
@@ -277,17 +277,17 @@ ul {
     font-weight: 600;
     color: #CDCDCD;
     position: absolute;
-    bottom: -270px;
-    font-size: 22px;
+    bottom: -250px;
+    font-size: 20px;
     left: 350px;
 }
 
 .garisteksaboutmeh {
     height: 1px;
-    width: 370px;
+    width: 305px;
     position: absolute;
-    bottom: -234px;
-    left: 490px;
+    bottom: -217px;
+    left: 490px; /* 490 tengah */
 }
 
 .teksabout2me ul {
@@ -300,15 +300,15 @@ ul {
     font-weight: 300;
     position: absolute;
     color: #cdcdcd;
-    top: 990px;
+    top: 900px;
     left: 350px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .listpemrogteks1, .listpemrogteks2, .listpemrogteks3 {
     margin-left: 50px;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 11px;
     color: #cdcdcd;
     bottom: -550px;
 }
@@ -327,6 +327,6 @@ ul {
 
 .listlistpemrog {
     position: absolute;
-    bottom: -570px;
+    bottom: -520px;
     left: 308px;
 }
