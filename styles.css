@@ -240,6 +240,7 @@ ul {
 /* ---------- CSS Bagian About ----------------*/
 
 .bagianabout {
+    max-height: 200vh;
     height: 200vh;
     display: flex;
     align-items: center;
@@ -354,6 +355,7 @@ ul {
 /* --------- CSS Bagian Portofolio -------- */
 
 .bagianportofolio {
+    max-height: 100vh;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -455,36 +457,101 @@ ul {
 
 .atas1:hover {
     opacity: 100%;
-    transition: opacity 0.3s, ease-in-out 0.3s;
+    transition: opacity 0.4s, ease-in-out 0.3s;
     scale: 105%;
 }
 
 .atas2:hover {
     opacity: 100%;
-    transition: opacity 0.3s, ease-in-out 0.3s;
+    transition: opacity 0.4s, ease-in-out 0.3s;
     scale: 105%;
 }
 
 .atas3:hover {
     opacity: 100%;
-    transition: opacity 0.3s, ease-in-out 0.3s;
+    transition: opacity 0.4s, ease-in-out 0.3s;
     scale: 105%;
 }
 
 .bawah1:hover {
     opacity: 100%;
-    transition: opacity 0.3s, ease-in-out 0.3s;
+    transition: opacity 0.4s, ease-in-out 0.3s;
     scale: 105%;
 }
 
 .bawah2:hover {
     opacity: 100%;
-    transition: opacity 0.3s, ease-in-out 0.3s;
+    transition: opacity 0.4s, ease-in-out 0.3s;
     scale: 105%;
 }
 
 .bawah3:hover {
     opacity: 100%;
-    transition: opacity 0.3s, ease-in-out 0.3s;
+    transition: opacity 0.4s, ease-in-out 0.3s;
     scale: 105%;
+}
+
+.bagiancontacts {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.getintouchtext {
+    font-weight: 700;
+    position: absolute;
+    top: 2200px;
+    font-size: 50px;
+    color: #D7D7D7;
+}
+
+.isigetintext {
+    font-weight: 400;
+    text-align: center;
+    color: #CDCDCD;
+    font-size: 15px;
+    position: absolute;
+    top: 2320px;
+}
+
+.backlightcontacts {
+        margin-left: 600px;
+        position: absolute;
+        top: 2300px;
+        width: 500px;
+        height: 350px;
+        border-radius: 50%;
+        background: linear-gradient(31deg, #2691B2 0%, #D9D117 45%, #AA502A 100%);
+        filter:blur(250px);
+        z-index: -11;
+}
+
+.buttonsayhello {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 2440px;
+    border-radius: 50px;
+    height: 60px;
+    font-weight: 500;
+    border-width: 0.2px;
+    font-size: 20px;
+    width: 168px;
+    z-index: 1;
+    color: white;
+    background-image: linear-gradient(-62deg, #DED476 0%, #C89E4D 48%, #B674EA 100%);
+    left: 575px;
+}
+
+.buttonsayhello:hover {
+    scale: 105%;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.buttonsayhello:active {
+    filter:brightness(80%);
+    transition: none;
 }
