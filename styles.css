@@ -11,6 +11,28 @@ ul {
     list-style-type: none;
 }
 
+.navbarblur {
+    position: fixed;
+    z-index: -12;
+    width: 100%;
+    height: 105px;
+    top: -10px;
+    filter: blur(1px);
+    background-color: #1d1d1d;
+}
+
+.backlight {
+    margin-left: 850px;
+    position: absolute;
+    top: 200px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 20%, #B22648, #9328C6);
+    filter:blur(125px);
+    z-index: -11;
+}
+
 .navbar {
     margin-top: 0%;
     position: fixed;
@@ -18,11 +40,12 @@ ul {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: normal;
+    z-index: 1;
 }
 
 .navbar ul {
     display: flex;
-    margin-left: 23px;
+    margin-left: 42px;
 }
 
 .navbarteks {
@@ -50,8 +73,8 @@ ul {
     text-transform: none;
     color: white;
     padding: 10px;
-    opacity: 0.25;
-    transition: opacity 0.5s ease 0s;
+    opacity: 0.5;
+    transition: opacity 0.4s ease 0s;
 }
 
 .navbarteksportofolio:hover {
@@ -69,7 +92,6 @@ ul {
 .navbartekshome:hover {
     opacity: 1;
 }
-
 
 .garisghlinkin {
     height: 100px;
@@ -93,63 +115,52 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-left: 0px;
     margin-top: 0px;
     position: absolute;
-    top: 44%;
-    left: 410px;
+    top: 46%;
+    left: 460px;
     transform: translate(-50%, -50%);
-    z-index: 7;
+    z-index: -9;
 }
 
 .loremipsum {
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 17px;
+    color: #CDCDCD;
     position: absolute;
-    top: 57%;
-    left: 297px;
+    top: 59%;
+    left: 319px;
     transform: translate(-50%, -50%);
-    z-index: 6;
+    z-index: -8;
 }
 
-
 .fotoutama {
-    height: 550px;
-    width: 507px;
+    height: 500px;
+    width: 457px;
     position: absolute;
-    margin-left: 58%;
-    bottom: 17%;
+    margin-left: 62%;
+    bottom: 20%;
     z-index: 1;
     border-radius: 50%;
+    z-index: -9
 }
 
 .fotoblur {
-    height: 550px;
-    width: 550px;
+    height: 500px;
+    width: 500px;
     position: absolute;
-    margin-left: 750px;
-    bottom: 90px;
+    margin-left: 790px;
+    bottom: 110px;
     z-index: -1;
     border-radius: 50%;
     filter: blur(12px);
+    z-index: -10;
 }
 
-.backlight {
-    margin-left: 850px;
-    position: absolute;
-    top: 200px;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 20%, #B22648, #9328C6);
-    filter:blur(150px);
-    z-index: 0;
-}
 
 .navbarteks:hover {
-    opacity: 0.25s;
+    opacity: 0.5s;
     transition: opacity 0.5s ease 1s;
 }
 
@@ -182,8 +193,8 @@ ul {
     left: 3%;
     transform: translate(-50%, -50%);
     z-index: 4;
-    opacity: 0.25;
-    transition: opacity 0.5s ease 0s;
+    opacity: 0.5;
+    transition: opacity 0.4s ease 0s;
 }
 
 .linkedinicon {
@@ -194,8 +205,8 @@ ul {
     left: 3%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    opacity: 0.25;
-    transition: opacity 0.5s ease 0s;
+    opacity: 0.5;
+    transition: opacity 0.4s ease 0s;
 }
 
 .instagramicon {
@@ -206,6 +217,109 @@ ul {
     left: 3%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    opacity: 0.25;
-    transition: opacity 0.5s ease 0s;
+    opacity: 0.5;
+    transition: opacity 0.4s ease 0s;
+}
+
+/* ---------- CSS Bagian About ----------------*/
+
+.bagianabout {
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fotoabout{
+    scale: 77%;
+    position: absolute;
+    right: -0px;
+    top: 720px;
+    z-index: 1;
+    filter: grayscale(100%);
+}
+
+.fotoabout:hover {
+    filter: none;
+}
+
+.kotak {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 3px 9.1px rgba(77, 104, 200, 0.5);
+    background-clip: padding-box;
+    right: 128px;
+    top: 917px;
+    z-index: 0;
+}
+
+.garisfotoabout {
+    scale: 77%;
+    position: absolute;
+    right: 12px;
+    top: 845px;
+    z-index: 0;
+}
+
+
+.about2me {
+    font-weight: 600;
+    color: #CDCDCD;
+    position: absolute;
+    bottom: -250px;
+    font-size: 20px;
+    left: 250px;
+}
+
+.teksabout2me ul {
+    display: flex;
+    margin-left: -40px;
+    font-weight: 300;
+}
+
+.textaboutme {
+    font-weight: 300;
+    position: absolute;
+    color: #cdcdcd;
+    top: 900px;
+    left: 250px;
+    font-size: 15px;
+}
+
+.listpemrogteks1, .listpemrogteks2, .listpemrogteks3 {
+    margin-left: 40px;
+    font-weight: 300;
+    font-size: 11px;
+    color: #cdcdcd;
+    bottom: -550px;
+}
+
+.kanan {
+    position: absolute;
+    bottom: 5px;
+    margin-left: -8px;
+    color: #B928BC;
+    font-weight: 300;
+}
+
+.fullstackdev {
+    color: #00F0FF;
+}
+
+.listlistpemrog {
+    position: absolute;
+    bottom: -560px;
+    left: 219px;
+}
+
+.garisteksaboutmeh {
+    height: 1px;
+    width: 340px;
+    position: absolute;
+    bottom: -217px;
+    left: 390px;
 }
