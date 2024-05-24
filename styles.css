@@ -187,18 +187,21 @@ ul {
     opacity: 1;
     scale: 110%;
     transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 
 .linkedinicon:hover {
     opacity: 1;
     scale: 110%;
     transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 
 .githubicon:hover {
     opacity: 1;
     scale: 110%;
     transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 
 .githubicon {
