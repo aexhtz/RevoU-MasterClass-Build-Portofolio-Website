@@ -285,9 +285,9 @@ ul {
 .garisteksaboutmeh {
     height: 1px;
     width: 298px;
-    position: absolute;
-    bottom: -227px;
-    left: 470px; /* 490 tengah */
+    position: relative;
+    bottom: -205px;
+    left: -42px; /* 490 tengah */
     z-index: 1;
 }
 
