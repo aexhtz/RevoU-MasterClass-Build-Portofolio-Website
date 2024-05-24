@@ -288,6 +288,7 @@ ul {
     position: absolute;
     bottom: -227px;
     left: 470px; /* 490 tengah */
+    z-index: 1;
 }
 
 .teksabout2me ul {
