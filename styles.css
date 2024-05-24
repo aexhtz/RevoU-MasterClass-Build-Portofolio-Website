@@ -1,54 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-image: radial-gradient(circle, #111111, #202020);
+    background-image: radial-gradient(circle at 20%, #111111 0%, #202020 99%);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 ul {
     list-style-type: none;
 }
 
-div.navbar {
+.navbar {
+    margin-top: 0%;
     position: fixed;
     display: fixed;
-    justify-content: flex-end;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
-div.navbar ul {
+.navbar ul {
     display: flex;
-    margin-left: 0px;
+    margin-left: 23px;
 }
 
-div.navbar.ul li {
-    height: 50px;
-}
-
-li.navbarteks {
-    font-size: 25px;
+.navbarteks {
+    font-size: 20px;
     color: #ffffff;
-    display: flex;
-    margin-left: 57px;
+    display: fixed;
+    margin-left: 30px;
+    max-width: 100%;
 }
 
-a.navbarteks2 {
+.garisnavbar {
+    height: 600px;
+    width: 1px;
+    position: absolute;
+    left: 722px;
+    margin-top: -330px;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    rotate: 90deg;
+    z-index: 8;  
+}
+
+.navbarteksportofolio, .navbarteksabout, .navbartekscontact, .navbartekshome {
     text-decoration: none;
     text-transform: none;
     color: white;
+    padding: 10px;
+    opacity: 0.25;
+    transition: opacity 0.5s ease 0s;
 }
 
-div.maintext1 {
+.navbarteksportofolio:hover {
+    opacity: 1;
+}
+
+.navbarteksabout:hover {
+    opacity: 1;
+}
+
+.navbartekscontact:hover {
+    opacity: 1;
+}
+
+.navbartekshome:hover {
+    opacity: 1;
+}
+
+
+.garisghlinkin {
+    height: 100px;
+    width: 1px;
+    position: fixed;
+    top: 92.4%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.maintext1 {
     font-family: 'Poppins', sans-serif;
 }
 
-p.hitext {
+.hitext {
     font-weight: 600;
     font-style: normal;
-    font-size: 50px;
+    font-size: 45px;
     background-image: radial-gradient(circle at center, #DE7676, #4D68C8, #B674EA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -56,64 +96,116 @@ p.hitext {
     margin-left: 0px;
     margin-top: 0px;
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 44%;
+    left: 410px;
     transform: translate(-50%, -50%);
-    
+    z-index: 7;
 }
 
-p.loremipsum {
+.loremipsum {
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
     color: #ffffff;
     position: absolute;
-    top: 65%;
-    left: 19%;
+    top: 57%;
+    left: 297px;
     transform: translate(-50%, -50%);
+    z-index: 6;
 }
 
-img.githubicon {
-    height: 40px;
-    width: 40px;
+
+.fotoutama {
+    height: 550px;
+    width: 507px;
     position: absolute;
-    top: 65%;
-    left: 19%;
+    margin-left: 58%;
+    bottom: 17%;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.fotoblur {
+    height: 550px;
+    width: 550px;
+    position: absolute;
+    margin-left: 750px;
+    bottom: 90px;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(12px);
+}
+
+.backlight {
+    margin-left: 850px;
+    position: absolute;
+    top: 200px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 20%, #B22648, #9328C6);
+    filter:blur(150px);
+    z-index: 0;
+}
+
+.navbarteks:hover {
+    opacity: 0.25s;
+    transition: opacity 0.5s ease 1s;
+}
+
+.navbarteks a {
+    position: relative;
+    overflow: hidden;
+}
+
+.instagramicon:hover {
+    opacity: 1;
+    scale: 110%;
+    transition: ease-in-out 0.2s;
+}
+.linkedinicon:hover {
+    opacity: 1;
+    scale: 110%;
+    transition: ease-in-out 0.2s;
+}
+.githubicon:hover {
+    opacity: 1;
+    scale: 110%;
+    transition: ease-in-out 0.2s;
+}
+
+.githubicon {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    top: 75%;
+    left: 3%;
     transform: translate(-50%, -50%);
+    z-index: 4;
+    opacity: 0.25;
+    transition: opacity 0.5s ease 0s;
 }
 
-img.linkedinicon {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    top: 65%;
-    left: 19%;
+.linkedinicon {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    top: 81%;
+    left: 3%;
     transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0.25;
+    transition: opacity 0.5s ease 0s;
 }
 
-img.garisghlinkin {
-    height: 150px;
-    width: 2px;
-    position: absolute;
-    top: 65%;
-    left: 19%;
+.instagramicon {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    top: 69%;
+    left: 3%;
     transform: translate(-50%, -50%);
-}
-
-img.fotoutama {
-    height: 650px;
-    width: 607px;
-    position: absolute;
-    margin-left: 52%;
-    bottom: 13%;
-}
-
-img.fotoblur {
-    height: 0.1px;
-    width: 0.1px;
-}
-
-img.garisnavbar {
-    height: 718px;
-    width: 2px;
+    z-index: 2;
+    opacity: 0.25;
+    transition: opacity 0.5s ease 0s;
 }
