@@ -5,6 +5,20 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    max-height: 200vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: radial-gradient(circle at 20%, #111111 0%, #202020 99%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(circle at 20%, #56213c 0%, #392145 50%, #414321 99%);
+    border-radius: 50px;
 }
 
 ul {
@@ -22,14 +36,14 @@ ul {
 }
 
 .backlight {
-    margin-left: 850px;
+    margin-left: 1000px;
     position: absolute;
-    top: 200px;
-    width: 350px;
-    height: 350px;
+    top: 210px;
+    width: 450px;
+    height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle at 20%, #B22648, #9328C6);
-    filter:blur(125px);
+    background: radial-gradient(circle at 40%, #B22648, #9328C6);
+    filter:blur(120px);
     z-index: -11;
 }
 
@@ -49,7 +63,7 @@ ul {
 }
 
 .navbarteks {
-    font-size: 20px;
+    font-size: 22px;
     color: #ffffff;
     display: fixed;
     margin-left: 30px;
@@ -60,7 +74,7 @@ ul {
     height: 600px;
     width: 1px;
     position: absolute;
-    left: 722px;
+    left: 870px;
     margin-top: -330px;
     top: 100%;
     transform: translate(-50%, -50%);
@@ -97,7 +111,7 @@ ul {
     height: 100px;
     width: 1px;
     position: fixed;
-    top: 92.4%;
+    top: 94%;
     left: 3%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -110,15 +124,15 @@ ul {
 .hitext {
     font-weight: 600;
     font-style: normal;
-    font-size: 45px;
+    font-size: 47px;
     background-image: radial-gradient(circle at center, #DE7676, #4D68C8, #B674EA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-top: 0px;
     position: absolute;
-    top: 46%;
-    left: 460px;
+    top: 48%;
+    left: 500px;
     transform: translate(-50%, -50%);
     z-index: -9;
 }
@@ -126,11 +140,11 @@ ul {
 .loremipsum {
     font-weight: 300;
     font-style: normal;
-    font-size: 17px;
+    font-size: 19px;
     color: #CDCDCD;
     position: absolute;
-    top: 59%;
-    left: 319px;
+    top: 61%;
+    left: 365px;
     transform: translate(-50%, -50%);
     z-index: -8;
 }
@@ -150,14 +164,13 @@ ul {
     height: 500px;
     width: 500px;
     position: absolute;
-    margin-left: 790px;
-    bottom: 110px;
+    margin-left: 888px;
+    bottom: 125px;
     z-index: -1;
     border-radius: 50%;
-    filter: blur(12px);
+    filter: blur(11px);
     z-index: -10;
 }
-
 
 .navbarteks:hover {
     opacity: 0.5s;
@@ -174,11 +187,13 @@ ul {
     scale: 110%;
     transition: ease-in-out 0.2s;
 }
+
 .linkedinicon:hover {
     opacity: 1;
     scale: 110%;
     transition: ease-in-out 0.2s;
 }
+
 .githubicon:hover {
     opacity: 1;
     scale: 110%;
@@ -186,10 +201,10 @@ ul {
 }
 
 .githubicon {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     position: fixed;
-    top: 75%;
+    top: 82%;
     left: 3%;
     transform: translate(-50%, -50%);
     z-index: 4;
@@ -198,10 +213,10 @@ ul {
 }
 
 .linkedinicon {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     position: fixed;
-    top: 81%;
+    top: 75%;
     left: 3%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -210,10 +225,10 @@ ul {
 }
 
 .instagramicon {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     position: fixed;
-    top: 69%;
+    top: 68%;
     left: 3%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -234,14 +249,15 @@ ul {
 .fotoabout{
     scale: 77%;
     position: absolute;
-    right: -0px;
-    top: 720px;
+    right: 20px;
+    top: 850px;
     z-index: 1;
     filter: grayscale(100%);
 }
 
 .fotoabout:hover {
     filter: none;
+    transition: ease-in-out 0.3s;
 }
 
 .kotak {
@@ -252,27 +268,26 @@ ul {
     border: 2px solid #ffffff;
     box-shadow: 2px 3px 9.1px rgba(77, 104, 200, 0.5);
     background-clip: padding-box;
-    right: 128px;
-    top: 917px;
+    right: 148px;
+    top: 1050px;
     z-index: 0;
 }
-
-.garisfotoabout {
-    scale: 77%;
-    position: absolute;
-    right: 12px;
-    top: 845px;
-    z-index: 0;
-}
-
 
 .about2me {
     font-weight: 600;
     color: #CDCDCD;
     position: absolute;
-    bottom: -250px;
-    font-size: 20px;
-    left: 250px;
+    bottom: -270px;
+    font-size: 22px;
+    left: 350px;
+}
+
+.garisteksaboutmeh {
+    height: 1px;
+    width: 370px;
+    position: absolute;
+    bottom: -234px;
+    left: 490px;
 }
 
 .teksabout2me ul {
@@ -285,23 +300,23 @@ ul {
     font-weight: 300;
     position: absolute;
     color: #cdcdcd;
-    top: 900px;
-    left: 250px;
-    font-size: 15px;
+    top: 990px;
+    left: 350px;
+    font-size: 16px;
 }
 
 .listpemrogteks1, .listpemrogteks2, .listpemrogteks3 {
-    margin-left: 40px;
+    margin-left: 50px;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 13px;
     color: #cdcdcd;
     bottom: -550px;
 }
 
 .kanan {
     position: absolute;
-    bottom: 5px;
-    margin-left: -8px;
+    bottom: 2.8px;
+    margin-left: -10px;
     color: #B928BC;
     font-weight: 300;
 }
@@ -312,14 +327,6 @@ ul {
 
 .listlistpemrog {
     position: absolute;
-    bottom: -560px;
-    left: 219px;
-}
-
-.garisteksaboutmeh {
-    height: 1px;
-    width: 340px;
-    position: absolute;
-    bottom: -217px;
-    left: 390px;
+    bottom: -570px;
+    left: 308px;
 }
