@@ -38,12 +38,12 @@ ul {
 .backlight {
     margin-left: 900px;
     position: absolute;
-    top: 210px;
+    top: -125px;
     width: 400px;
-    height: 350px;
+    height: 700px;
     border-radius: 50%;
     background: radial-gradient(circle at 40%, #B22648, #9328C6);
-    filter:blur(120px);
+    filter:blur(150px);
     z-index: -11;
 }
 
@@ -134,7 +134,7 @@ ul {
     top: 48%;
     left: 470px;
     transform: translate(-50%, -50%);
-    z-index: -9;
+    z-index: 0;
 }
 
 .loremipsum {
@@ -146,7 +146,7 @@ ul {
     top: 61%;
     left: 330px;
     transform: translate(-50%, -50%);
-    z-index: -8;
+    z-index: 0;
 }
 
 .fotoutama {
@@ -343,11 +343,11 @@ ul {
     margin-left: -900px;
     position: absolute;
     top: 990px;
-    width: 400px;
+    width: 1000px;
     height: 350px;
     border-radius: 50%;
     background: linear-gradient(34deg, #26B256 30%, #752AAA 80%, #C62845 100%);
-    filter:blur(225px);
+    filter:blur(350px);
     z-index: -11;
 }
 
