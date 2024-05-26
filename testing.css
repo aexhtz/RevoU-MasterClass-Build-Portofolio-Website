@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-image: radial-gradient(circle at 20%, #111111 0%, #202020 99%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: radial-gradient(circle at 20%, #111111 0%, #202020 99%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(circle at 20%, #56213c 0%, #392145 50%, #414321 99%);
+    border-radius: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbarblur {
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    max-width: 100%;
+    height: 105px;
+    max-height: 105px;
+    top: -10px;
+    filter: blur(30px);
+    background-color: #1d1d1d;
+}
+
+.backlight {
+    margin-left: 900px;
+    position: absolute;
+    top: -125px;
+    width: 400px;
+    max-width: 400px;
+    max-height: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40%, #B22648, #9328C6);
+    filter:blur(150px);
+    z-index: -11;
+}
+
+.navbar {
+    position: fixed;
+    font-weight: 600;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+.navbarteks {
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 100;
+}
+
+.garisnavbar {
+    display: none;
+}
+
+.navbarteks a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    opacity: 0.5;
+    transition: opacity 0.4s ease 0s;
+}
+
+.navbarteks a:hover {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .navbarteks {
+        font-size: 20px;
+    }
+
+    .garisnavbar {
+        display: block;
+        height: 600px;
+        width: 1px;
+        position: absolute;
+        left: 735px;
+        margin-top: -330px;
+        top: 100%;
+        transform: translate(-50%, -50%);;
+        rotate: 90deg;
+    }
+}
+
+.garisghlinkin {
+    height: 100px;
+    max-height: 100px;
+    width: 1px;
+    max-width: 1px;
+    position: fixed;
+    top: 94%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.maintext1 {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.hitext {
+    font-weight: 600;
+    font-size: 2.5rem;
+    background-image: radial-gradient(circle at 85%, #DE7676, #4D68C8, #B674EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    z-index: 0;
+}
+
+@media (max-width: 767px) {
+    .hitext {
+        font-size: 2rem;
+    }
+
+    .loremipsum {
+        font-size: 1rem;
+    }
+
+    .fotoutama, .fotoblur {
+        width: 80%;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+        bottom: 0;
+    }
+}
+
+.loremipsum {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    color: #CDCDCD;
+    position: absolute;
+    top: 61%;
+    left: 330px;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.fotoutama {
+    height: 500px;
+    max-height: 500px;
+    max-width: 457px;
+    width: 457px;
+    position: absolute;
+    margin-left: 62%;
+    bottom: 20%;
+    z-index: 1;
+    border-radius: 50%;
+    z-index: -9
+}
+
+.fotoblur {
+    height: 500px;
+    max-height: 500px;
+    max-width: 450px;
+    width: 450px;
+    position: absolute;
+    margin-left: 825px;
+    bottom: 100px;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(11px);
+    z-index: -10;
+}
+
+.navbarteks:hover {
+    opacity: 0.5s;
+    transition: opacity 0.5s ease 1s;
+}
+
+.navbarteks a {
+    position: relative;
+    overflow: hidden;
+}
+
+.instagramicon:hover {
+    opacity: 1;
+    scale: 110%;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.linkedinicon:hover {
+    opacity: 1;
+    scale: 110%;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.githubicon:hover {
+    opacity: 1;
+    scale: 110%;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.githubicon {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 82%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    opacity: 0.5;
+    transition: opacity 0.4s ease 0s;
+}
+
+.linkedinicon {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 75%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    opacity: 0.5;
+    transition: opacity 0.4s ease 0s;
+}
+
+.instagramicon {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 68%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    opacity: 0.5;
+    transition: opacity 0.4s ease 0s;
+}
+
+/* ---------- CSS Bagian About ----------------*/
+
+.bagianabout {
+    max-height: 200vh;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fotoabout{
+    scale: 70%;
+    position: absolute;
+    right: 40px;
+    top: 750px;
+    z-index: 1;
+    filter: grayscale(100%);
+}
+
+.fotoabout:hover {
+    filter: none;
+    transition: ease-in-out 0.3s;
+}
+
+.kotak {
+    position: absolute;
+    width: 225px;
+    max-width: 225px;
+    max-height: 225px;
+    height: 225px;
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 3px 9.1px rgba(77, 104, 200, 0.5);
+    background-clip: padding-box;
+    right: 178px;
+    top: 965px;
+    z-index: 0;
+}
+
+.about2me {
+    font-weight: 600;
+    background-image: radial-gradient(circle at 85%, #DE7676, #4D68C8, #B674EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    bottom: -260px;
+    font-size: 20px;
+    left: 320px;
+}
+
+.garisteksaboutmeh {
+    height: 1px;
+    max-height: 1px;
+    max-width: 298px;
+    width: 298px;
+    position: relative;
+    bottom: -205px;
+    left: -45px;
+    z-index: 1;
+}
+
+.teksabout2me ul {
+    display: flex;
+    margin-left: -40px;
+    font-weight: 300;
+}
+
+.textaboutme {
+    font-weight: 300;
+    position: absolute;
+    color: #cdcdcd;
+    top: 900px;
+    left: 320px;
+    font-size: 14px;
+    z-index: 15;
+}
+
+.listpemrogteks1, .listpemrogteks2, .listpemrogteks3 {
+    margin-left: 50px;
+    font-weight: 300;
+    font-size: 11px;
+    color: #cdcdcd;
+    bottom: -550px;
+    z-index: 15;
+}
+
+.kanan {
+    position: absolute;
+    bottom: 2.8px;
+    margin-left: -10px;
+    color: #B928BC;
+    font-weight: 300;
+    z-index: 15;
+}
+
+.fullstackdev {
+    color: #00F0FF;
+}
+
+.listlistpemrog {
+    position: absolute;
+    bottom: -520px;
+    left: 280px;
+}
+
+.backlightabout {
+    margin-left: -900px;
+    position: absolute;
+    top: 950px;
+    width: 1000px;
+    max-width: 1000px;
+    height: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(34deg, #26B256 30%, #752AAA 80%, #C62845 100%);
+    filter:blur(300px);
+    z-index: -11;
+}
+
+/* --------- CSS Bagian Portofolio -------- */
+
+.bagianportofolio {
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.teksportofolio {
+    font-size: 20px;
+    font-weight: 600;
+    background-image: radial-gradient(circle at 85%, #DE7676, #4D68C8, #B674EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    top: 1480px;
+    left: 360px;
+    z-index: 1;
+}
+
+.garisteksportofolio {
+    height: 1px;
+    width: 250px;
+    position: absolute;
+    top: 1516px;
+    left: 500px;
+    z-index: 1;
+}
+
+.atas1, .atas2, .atas3 {
+    position: absolute;
+    border-radius: 30px;
+    height: 150px;
+    max-height: 150px;
+    width: 150px;
+    max-width: 150px;
+    opacity: 50%;
+    background-color: #D9D9D9;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.ultigaatas {
+    display: flex;
+    align-items: space-between;
+    position: absolute;
+    gap: 220px;
+    left: 325px;
+    top: 1550px;
+    z-index: 1;
+}
+
+.bawah1, .bawah2, .bawah3 {
+    position: absolute;
+    border-radius: 30px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    width: 150px;
+    opacity: 50%;
+    background-color: #D9D9D9;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.ultigabawah {
+    display: flex;
+    align-items: space-between;
+    position: absolute;
+    gap: 220px;
+    left: 325px;
+    top: 1750px;
+    z-index: 1;
+}
+
+.backlightportofolio {
+    margin-left: 0px;
+    position: absolute;
+    top: 1600px;
+    width: 500px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(34deg, #B2A426 30%, #752AAA 80%, #C62845 100%);
+    filter:blur(200px);
+    z-index: -11;
+}
+
+.bawah1 img, .bawah2 img, .bawah3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.atas1 img, .atas2 img, .atas3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.atas1:hover {
+    opacity: 100%;
+    transition: opacity 0.4s, ease-in-out 0.3s;
+    scale: 105%;
+}
+
+.atas2:hover {
+    opacity: 100%;
+    transition: opacity 0.4s, ease-in-out 0.3s;
+    scale: 105%;
+}
+
+.atas3:hover {
+    opacity: 100%;
+    transition: opacity 0.4s, ease-in-out 0.3s;
+    scale: 105%;
+}
+
+.bawah1:hover {
+    opacity: 100%;
+    transition: opacity 0.4s, ease-in-out 0.3s;
+    scale: 105%;
+}
+
+.bawah2:hover {
+    opacity: 100%;
+    transition: opacity 0.4s, ease-in-out 0.3s;
+    scale: 105%;
+}
+
+.bawah3:hover {
+    opacity: 100%;
+    transition: opacity 0.4s, ease-in-out 0.3s;
+    scale: 105%;
+}
+
+.bagiancontacts {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.getintouchtext {
+    font-weight: 700;
+    position: absolute;
+    top: 2200px;
+    font-size: 50px;
+    color: #D7D7D7;
+}
+
+.isigetintext {
+    font-weight: 400;
+    text-align: center;
+    color: #CDCDCD;
+    font-size: 15px;
+    position: absolute;
+    top: 2320px;
+}
+
+.backlightcontacts {
+        margin-left: 600px;
+        position: absolute;
+        top: 2300px;
+        width: 500px;
+        height: 350px;
+        border-radius: 50%;
+        background: linear-gradient(31deg, #2691B2 0%, #D9D117 45%, #AA502A 100%);
+        filter:blur(250px);
+        z-index: -11;
+}
+
+.buttonsayhello {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 2440px;
+    border-radius: 50px;
+    height: 60px;
+    font-weight: 500;
+    border-width: 0.2px;
+    max-height: 60px;
+    max-width: 167px;
+    font-size: 20px;
+    width: 168px;
+    z-index: 1;
+    color: white;
+    background-image: linear-gradient(-62deg, #DED476 0%, #C89E4D 48%, #B674EA 100%);
+    left: 575px;
+}
+
+.buttonsayhello:hover {
+    scale: 105%;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.buttonsayhello:active {
+    filter:brightness(80%);
+    transition: none;
+}
